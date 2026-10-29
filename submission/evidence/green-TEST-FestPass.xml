@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="FestPassTest" tests="28" failures="0" errors="0" skipped="0">
+  <testcase classname="FestPassTest" name="emptyEventAcceptsBooking"/>
+  <testcase classname="FestPassTest" name="lastAvailableSeatIsAccepted"/>
+  <testcase classname="FestPassTest" name="fullEventRejectsBooking"/>
+  <testcase classname="FestPassTest" name="overCapacityRejectsBooking"/>
+  <testcase classname="FestPassTest" name="zeroCapacityRejectsBooking"/>
+  <testcase classname="FestPassTest" name="oneSeatEventAcceptsBooking"/>
+  <testcase classname="FestPassTest" name="negativeBookedIsRejected"/>
+  <testcase classname="FestPassTest" name="negativeCapacityIsRejected"/>
+  <testcase classname="FestPassTest" name="eventsTrackIndependentCapacity"/>
+  <testcase classname="FestPassTest" name="duplicateEventDoesNotReplaceBookings"/>
+  <testcase classname="FestPassTest" name="invalidEventsLeaveStateUnchanged"/>
+  <testcase classname="FestPassTest" name="duplicateBookingDoesNotConsumeSeat"/>
+  <testcase classname="FestPassTest" name="soldOutBookingLeavesRosterUnchanged"/>
+  <testcase classname="FestPassTest" name="cancellationFreesSeat"/>
+  <testcase classname="FestPassTest" name="missingBookingCannotBeCancelled"/>
+  <testcase classname="FestPassTest" name="unknownEventsAreRejected"/>
+  <testcase classname="FestPassTest" name="invalidStudentIdsAreRejected"/>
+  <testcase classname="FestPassTest" name="snapshotsCannotMutateService"/>
+  <testcase classname="FestPassTest" name="bookingsSurviveSaveAndReload"/>
+  <testcase classname="FestPassTest" name="cancellationsSurviveReload"/>
+  <testcase classname="FestPassTest" name="corruptDataIsRejected"/>
+  <testcase classname="FestPassTest" name="missingDataStartsEmpty"/>
+  <testcase classname="FestPassTest" name="cliWorkflowPersistsAcrossCommands"/>
+  <testcase classname="FestPassTest" name="cliReportsInvalidRequests"/>
+  <testcase classname="FestPassTest" name="cliDoesNotOverwriteCorruptFile"/>
+  <testcase classname="FestPassTest" name="cliReportsReadAndSaveFailures"/>
+  <testcase classname="FestPassTest" name="cliRejectsLockedStore"/>
+  <testcase classname="FestPassTest" name="helpDoesNotNeedProjectData"/>
+</testsuite>

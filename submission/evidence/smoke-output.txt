@@ -1,0 +1,8 @@
+PASS JAR: add-event (exit 0)
+PASS JAR: book (exit 0)
+PASS JAR: book (exit 2)
+PASS JAR: roster (exit 0)
+PASS JAR: cancel (exit 0)
+PASS JAR: book (exit 0)
+PASS JAR: summary (exit 0)
+PASS: seven real-JAR commands; persistence, sold-out rejection, cancellation, and seat reuse verified.

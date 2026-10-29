@@ -1,0 +1,49 @@
+Compiled FestPass with Java 21.
+PASS emptyEventAcceptsBooking
+PASS lastAvailableSeatIsAccepted
+PASS fullEventRejectsBooking
+PASS overCapacityRejectsBooking
+PASS zeroCapacityRejectsBooking
+PASS oneSeatEventAcceptsBooking
+PASS negativeBookedIsRejected
+PASS negativeCapacityIsRejected
+PASS eventsTrackIndependentCapacity
+PASS duplicateEventDoesNotReplaceBookings
+PASS invalidEventsLeaveStateUnchanged
+PASS duplicateBookingDoesNotConsumeSeat
+PASS soldOutBookingLeavesRosterUnchanged
+FAIL cancellationFreesSeat: SOLD OUT. Even the developer needs a ticket.
+java.lang.IllegalArgumentException: SOLD OUT. Even the developer needs a ticket.
+	at BookingService.book(BookingService.java:60)
+	at FestPassTest.cancellation(FestPassTest.java:147)
+	at FestPassTest.main(FestPassTest.java:71)
+PASS missingBookingCannotBeCancelled
+PASS unknownEventsAreRejected
+PASS invalidStudentIdsAreRejected
+PASS snapshotsCannotMutateService
+PASS bookingsSurviveSaveAndReload
+FAIL cancellationsSurviveReload: Cancellation was lost
+java.lang.AssertionError: Cancellation was lost
+	at FestPassTest.check(FestPassTest.java:343)
+	at FestPassTest.lambda$persistCancellation$27(FestPassTest.java:207)
+	at FestPassTest.withFile(FestPassTest.java:322)
+	at FestPassTest.persistCancellation(FestPassTest.java:200)
+	at FestPassTest.main(FestPassTest.java:71)
+PASS corruptDataIsRejected
+PASS missingDataStartsEmpty
+FAIL cliWorkflowPersistsAcrossCommands: List does not reflect persisted cancellation
+java.lang.AssertionError: List does not reflect persisted cancellation
+	at FestPassTest.check(FestPassTest.java:343)
+	at FestPassTest.lambda$cliWorkflow$29(FestPassTest.java:237)
+	at FestPassTest.withFile(FestPassTest.java:322)
+	at FestPassTest.cliWorkflow(FestPassTest.java:230)
+	at FestPassTest.main(FestPassTest.java:71)
+PASS cliReportsInvalidRequests
+PASS cliDoesNotOverwriteCorruptFile
+PASS cliReportsReadAndSaveFailures
+PASS cliRejectsLockedStore
+PASS helpDoesNotNeedProjectData
+28 tests, 3 failures. Report: build/test-results/TEST-FestPass.xml
+Exception in thread "main" java.lang.IllegalStateException: Tests failed (exit 1). JAR creation is blocked.
+	at Build.runTests(Build.java:65)
+	at Build.main(Build.java:39)

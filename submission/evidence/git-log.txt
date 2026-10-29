@@ -1,0 +1,9 @@
+
+--- git log ---
+fab9d99 Add FestPass starter and pipeline
+f05d17d Configure my Jenkins assignment
+0a8c530 Personalize my help introduction
+c8b34ce (HEAD -> main) Fix cancellation to free the booked seat
+
+--- test file hash ---
+d203243b893e64ada9a4752b4b686ee1012326b90b02cc481547679f3af98a34  src/test/java/FestPassTest.java

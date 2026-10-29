@@ -1,0 +1,31 @@
+Compiled FestPass with Java 21.
+PASS emptyEventAcceptsBooking
+PASS lastAvailableSeatIsAccepted
+PASS fullEventRejectsBooking
+PASS overCapacityRejectsBooking
+PASS zeroCapacityRejectsBooking
+PASS oneSeatEventAcceptsBooking
+PASS negativeBookedIsRejected
+PASS negativeCapacityIsRejected
+PASS eventsTrackIndependentCapacity
+PASS duplicateEventDoesNotReplaceBookings
+PASS invalidEventsLeaveStateUnchanged
+PASS duplicateBookingDoesNotConsumeSeat
+PASS soldOutBookingLeavesRosterUnchanged
+PASS cancellationFreesSeat
+PASS missingBookingCannotBeCancelled
+PASS unknownEventsAreRejected
+PASS invalidStudentIdsAreRejected
+PASS snapshotsCannotMutateService
+PASS bookingsSurviveSaveAndReload
+PASS cancellationsSurviveReload
+PASS corruptDataIsRejected
+PASS missingDataStartsEmpty
+PASS cliWorkflowPersistsAcrossCommands
+PASS cliReportsInvalidRequests
+PASS cliDoesNotOverwriteCorruptFile
+PASS cliReportsReadAndSaveFailures
+PASS cliRejectsLockedStore
+PASS helpDoesNotNeedProjectData
+28 tests, 0 failures. Report: build/test-results/TEST-FestPass.xml
+BUILD SUCCESS: build/festpass.jar
